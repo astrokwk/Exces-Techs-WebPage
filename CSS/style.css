@@ -27,18 +27,27 @@ header {
   margin-top: 100px;
 } */
 
-
+.practiceArea, 
+.vision, 
+.attorney,
+.brand { text-align: center; }
 
 .container {
   padding: 40px 0px;
 }
 
-/* ------------ Header ------------------- */
+.h2 {
+  color: #00a47d;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
 .row {
   margin-right: 0px; 
   margin-left: 0px; 
 }
+
+/* ------------ Practice Area ------------------- */
 
 .col-sm-4 {
   padding: 40px 20px;
@@ -62,6 +71,10 @@ header {
   color: white;
 }
 
+.vision > .container > h2 {
+  color: white;
+}
+
 .col-sm-10 {
   text-align: left;
 }
@@ -72,7 +85,26 @@ header {
 
 /* ------------ Attorney ------------------- */
 
-.img-rounded.lawyer {
-  width: 304;
-  height: 266;
+.attorneyBox {
+  padding: 20px;
 }
+
+/* ------------ Brand ------------------- */
+
+.brand-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.brand-container > a > img {
+  width: 250px;
+  height: auto;
+  margin: 50px 0px;
+}
+
+/* .img-rounded.lawyer {
+  width: 244px;
+  height: 206px;
+} */
+
