@@ -1,7 +1,9 @@
-* { margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden;}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-.jumbotron {
-  background-color: rgba(0,133,101,.4);
+/* ------------ Header ------------------- */
+
+header {
+  /* background-color: rgba(0,133,101,.4); */
   background-image: url('../LawyersPicture/chess.jpg');
   height: 100vh;
   background-position: center;
@@ -9,4 +11,68 @@
   background-size: cover;
   position: relative;
   opacity: 0.9;
+}
+
+/* .headerContent {
+  padding: 20px;
+  background-color: rgba(0,133,101,.4);
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.headerContent > h1 {
+  color: white;
+  margin-top: 100px;
+} */
+
+
+
+.container {
+  padding: 40px 0px;
+}
+
+/* ------------ Header ------------------- */
+
+.row {
+  margin-right: 0px; 
+  margin-left: 0px; 
+}
+
+.col-sm-4 {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.col-sm-4 > p {
+  text-align: left;
+}
+
+.glyphicon {
+  color: rgb(0,133,101);
+  font-size: 50px;
+}
+
+/* ------------ Our Vison ------------------- */
+
+.vision {
+  background-color: rgb(0,164,125);
+  text-align: center;
+  color: white;
+}
+
+.col-sm-10 {
+  text-align: left;
+}
+
+.col-sm-10 > p {
+  margin-top: 20px;
+}
+
+/* ------------ Attorney ------------------- */
+
+.img-rounded.lawyer {
+  width: 304;
+  height: 266;
 }
