@@ -30,7 +30,9 @@ header {
 .practiceArea, 
 .vision, 
 .attorney,
-.brand { text-align: center; }
+.brand,
+.award,
+.contactUs { text-align: center; }
 
 .container {
   padding: 40px 0px;
@@ -58,7 +60,7 @@ header {
   text-align: left;
 }
 
-.glyphicon {
+.col-sm-4 > .glyphicon {
   color: rgb(0,133,101);
   font-size: 50px;
 }
@@ -91,7 +93,8 @@ header {
 
 /* ------------ Brand ------------------- */
 
-.brand-container {
+.brand-container, 
+.award > .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -103,8 +106,28 @@ header {
   margin: 50px 0px;
 }
 
-/* .img-rounded.lawyer {
-  width: 244px;
-  height: 206px;
-} */
+/* ------------ Contact Us ------------------- */
 
+.contactUs {
+  background-color: rgb(0,190,144);
+}
+
+.contactUs > .container > h2 {
+  color: white;
+}
+
+.contactInfo {
+  text-align: left;
+  margin: auto;
+  width: 80%;
+  color: white;
+  font-size: 18px;
+}
+
+.contactInfo >p >span {
+  padding: 10px;
+}
+
+.googleReview {
+  margin-top: 30px;
+}
