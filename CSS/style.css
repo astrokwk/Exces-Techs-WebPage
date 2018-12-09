@@ -110,6 +110,11 @@ footer { text-align: center; }
 
 .googleReview { margin-top: 30px; }
 
+.btn-info {
+  background-color: #007156;
+  border-color: #007156;
+}
+
 /* ------------ Footer ------------------- */
 footer {
   color: white;
