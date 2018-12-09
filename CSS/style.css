@@ -31,7 +31,8 @@ header {
 .attorney,
 .brand,
 .award,
-.contactUs { text-align: center; }
+.contactUs,
+footer { text-align: center; }
 
 .container {  padding: 40px 0px; }
 
@@ -99,7 +100,7 @@ header {
 .contactUs > .container > h2 {  color: white; }
 
 .contactInfo {
-  text-align: left;
+  text-align: center;
   margin: auto;
   color: white;
   font-size: 18px;
@@ -108,3 +109,10 @@ header {
 .contactInfo >p >span { padding: 10px; }
 
 .googleReview { margin-top: 30px; }
+
+/* ------------ Footer ------------------- */
+footer {
+  color: white;
+  background-color: rgb(0,190,144);
+  padding: 0px 0px 40px;
+}
