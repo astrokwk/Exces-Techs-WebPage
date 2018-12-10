@@ -12,24 +12,16 @@ header {
   opacity: 0.9;
 }
 
-/* .headerContent {
-  padding: 20px;
-  background-color: rgba(0,133,101,.4);
-  width: 35%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-}
-*/
-
 .headerContent {
   color: white;
   font-family: serif;
-  padding-top: 120px;
+  padding-top: 10%;
   padding-left: 100px;
 }
 
 .headerContent > h1 {
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   color: white;
   font-size: 72px;
   text-shadow: 3px 3px black;
@@ -38,7 +30,35 @@ header {
 .headerContent > h3 {
   text-shadow: 2px 2px black;
   padding-left: 100px;
+  -webkit-animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .practiceArea, 
 .vision, 
@@ -134,4 +154,16 @@ footer {
   color: white;
   background-color: rgb(0,190,144);
   padding: 0px 0px 40px;
+}
+
+@media screen and (max-width: 769px) {
+  header {
+    height: 80vh;
+  }
+  .headerContent > h1 {
+    font-size: 7vw;
+  }
+  .headerContent > h4 {
+    font-size: 20px;
+  }
 }
