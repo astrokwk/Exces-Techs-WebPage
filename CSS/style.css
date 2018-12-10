@@ -20,11 +20,25 @@ header {
   position: absolute;
   overflow: hidden;
 }
+*/
+
+.headerContent {
+  color: white;
+  font-family: serif;
+  padding-top: 120px;
+  padding-left: 100px;
+}
 
 .headerContent > h1 {
   color: white;
-  margin-top: 100px;
-} */
+  font-size: 72px;
+  text-shadow: 3px 3px black;
+} 
+
+.headerContent > h3 {
+  text-shadow: 2px 2px black;
+  padding-left: 100px;
+}
 
 .practiceArea, 
 .vision, 
